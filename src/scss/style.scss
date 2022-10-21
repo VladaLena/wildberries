@@ -27,6 +27,7 @@ $mainYellow: #f2da80;
 @import "base/null";
 
 body {
+    background-color: #121528;
 }
 
 .intro {
@@ -179,6 +180,10 @@ body {
   // .content__up
 
   &__up {
+    @media (max-width: em(768)){
+        width: 100%;
+        // justify-content: center;
+    }
     display: flex;
     justify-content: center;
     text-align: center;
@@ -522,6 +527,7 @@ body {
   &__cards {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 30px;
   }
 
@@ -661,6 +667,7 @@ body {
   &__content {
     margin: 0 auto;
     max-width: 1186px;
+
   }
 
   // .answers__title
@@ -689,6 +696,7 @@ body {
 }
 .form {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   gap: 30px;
 
